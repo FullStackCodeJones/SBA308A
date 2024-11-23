@@ -16,5 +16,24 @@ Welcome to the **GIF Messaging App**—the easiest way to send loving messages a
 
 1. **Find Your GIF:** Type a word in the search bar like "love," "goodbye," or "funny," and click the "Find GIFs" button.
 2. **Pick the GIF:** Click on a GIF to select it. It'll show up in the selected area.
-3. **Write Your Message:** Type your heartfelt (or hilarious) message in the input box
+3. **Write Your Message:** Type your heartfelt (or hilarious) message in the input box.
+4. **Send It:** Once everything’s perfect, hit "Send" to share the love. **Note:** It’s all saved in the backend for now.
 
+## Want to Build It Yourself?
+
+If you want to try building this fun little app yourself, go ahead! Here's a quick guide:
+
+1. Clone the repo
+2. Set up your MongoDB and .env variables
+3. Run `npm install` to install dependencies
+4. Run `npm start` to see the app in action
+
+## Contributing
+
+I’m a one-woman show on this project, so I’ll be handling the changes! But if you have any suggestions or feedback, don’t hesitate to reach out.
+
+## Contact Me
+
+Questions? Hit me up anytime! I’m here for you—let’s make the world a better place, one GIF at a time!
+
+-- Randi Jones
