@@ -2,7 +2,6 @@ html,
 body {
   height: 100%;
   margin: 0;
-  margin: 0;
   padding: 0;
 }
 
@@ -11,18 +10,20 @@ body {
   background-size: cover; /* covers entire page */
   background-position: center; /* centers the image */
   background-repeat: no-repeat; /* prevents the image from repeating */
-  background-attachment: fixed; /* Fixed background when scrolling*/
+  background-attachment: fixed; /* Fixed background when scrolling */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /*Aligns content to top */
+  justify-content: flex-start; /* Aligns content to top */
   align-items: center; /* Aligns content to center horizontally */
   height: 100vh; /* Full height of the viewport */
+  font-family: Arial, sans-serif; /* Ensure the body uses a standard font */
+  color: #333; /* Make sure text is dark enough for readability */
 }
 
 h1 {
   color: #780606;
   font-size: 6rem;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.878);
+  text-shadow: 3px 3px 5px rgba(255, 253, 253, 0.878);
   font-family: "Bokor", system-ui; /* Assuming the Bokor font is loaded */
   text-align: center;
 }
@@ -33,12 +34,6 @@ h1 {
   font-style: normal;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #3333;
-}
-
 #message-creator {
   display: flex;
   flex-direction: column;
@@ -46,10 +41,66 @@ body {
   margin: auto;
 }
 
+textarea {
+  width: 80%;
+  min-height: 150px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+  background-color: #fff;
+  color: #333;
+}
+
 button {
   background-color: #4caf50;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
   cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#gif-query {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#gif-results img {
+  margin: 5px;
+  max-width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#gif-results img:hover {
+  transform: scale(1.1);
+}
+
+#selected-gif img {
+  max-width: 300px;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+footer p {
+  color: #fffcfc;
+  text-shadow: 3px 3px 5px rgba(255, 253, 253, 0.041);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
 }
