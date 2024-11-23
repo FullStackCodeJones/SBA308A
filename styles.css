@@ -1,0 +1,55 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./images/armedforcespic.png");
+  background-size: cover; /* covers entire page */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* prevents the image from repeating */
+  background-attachment: fixed; /* Fixed background when scrolling*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /*Aligns content to top */
+  align-items: center; /* Aligns content to center horizontally */
+  height: 100vh; /* Full height of the viewport */
+}
+
+h1 {
+  color: #780606;
+  font-size: 6rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.878);
+  font-family: "Bokor", system-ui; /* Assuming the Bokor font is loaded */
+  text-align: center;
+}
+
+.bokor-regular {
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #3333;
+}
+
+#message-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

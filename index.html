@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hearts Apart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bokor&family=Dancing+Script:wght@400..700&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="bokor-regular">Hearts Apart</h1>
+    </header>
+
+    <main>
+      <section id="message-creator">
+        <textarea
+          id="message-input"
+          placeholder="Write Your Message..."
+        ></textarea>
+        <input
+          type="text"
+          id="gif-query"
+          placeholder="Enter search term for GIFs..."
+        />
+
+        <button id="fetch-gifs">Find GIFS</button>
+        <div id="gif-results"></div>
+        <button id="send-message">Send Message</button>
+      </section>
+    </main>
+    <footer>
+      <p>Stay connected, even from afar ❤️</p>
+      <script type="module" src="main.js"></script>
+    </footer>
+  </body>
+</html>
