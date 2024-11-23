@@ -12,7 +12,8 @@ export function displayGifs(gifs) {
 
     // Add click event to store the selected GIF
     gifElement.addEventListener("click", () => {
-      displaySelectedGif(gif.images.fixed_height.url);
+      selectedGifUrl = gif.images.fixed_height.url; // Update the selectedGifUrl
+      displaySelectedGif(selectedGifUrl); // Update the selected GIF display
     });
 
     gifResults.appendChild(gifElement);
@@ -39,6 +40,6 @@ export function getGifQuery() {
 
 export function clearMessage() {
   document.getElementById("message-input").value = "";
-  document.getElementById("gif-query").value = "";
-  document.getElementById("selected-gif").innerHTML = "";
+  document.getElementById("gif-query").value = ""; // Clear the query input
+  document.getElementById("gif-results").innerHTML = ""; // Clear the GIF results
 }
